@@ -1,16 +1,16 @@
-function LeakingClass(){}
+function SimpleClass(){}
 
 var leaks = [];
 
-describe('LeakingClass', function(){
+describe('SimpleClass', function(){
 
   it('is leaking', function(){
-    leaks.push(new LeakingClass());
+    leaks.push(new SimpleClass());
   });
 
 
   it('is not leaking', function(){
-    new LeakingClass;
+    new SimpleClass;
   });
 
 });
