@@ -1,7 +1,7 @@
 {
   "name": "memdiff",
   "version": "0.0.1",
-  "description": "run a function for given duration, return heap diff.",
+  "description": "BDD style memory leak hunting tool.",
   "main": "index.js",
   "scripts": {
     "test": "./bin/memdiff example/simple"
