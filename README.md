@@ -43,24 +43,14 @@ describe('SimpleClass', function(){
 var memdiff = require('memdiff');
 
 function SimpleClass(){}
+
 var leaks = [];
 
 function leaking(){
   leaks.push(new SimpleClass);
 }
 
-function notLeaking(){
-  new SimpleClass;
-}
-
 memdiff(leaking, function(result){
   console.log('leaking: ', result.size);
-  
-  memdiff(notLeaking, function(result){
-    console.log('not leaking: ', result.size);
-  });
-  
-});
-
 });
 ```
