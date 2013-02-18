@@ -34,6 +34,7 @@ describe('SimpleClass', function(){
     new SimpleClass;
   });
 
+});
 ```
 
 <a name="api"></a>
