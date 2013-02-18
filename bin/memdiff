@@ -8,7 +8,8 @@ require("colors");
 
 var duration = argv.duration || 5,
     times    = argv.times || 999,
-    interval = argv.interval || 2.5;
+    interval = argv.interval || 2.5,
+    pattern  = argv.pattern || argv.p;
 
 argv.help || argv.verbose && help();
 argv._ && argv._.length ? run() : help();
@@ -16,11 +17,12 @@ argv._ && argv._.length ? run() : help();
 function help(){
   process.stdout.write('\u001B[2J\u001B[0;0f');
   console.log('\n     Usage \n');
-  console.log('          memdiff [module]'.grey);
+  console.log('          memdiff [module] [options]'.grey);
   console.log('\n     Options\n');
-  console.log('          Duration (--duration) per test: %d seconds'.grey, duration);
-  console.log('          Each test will be executed %d times (--times) on each loop.'.grey, times);
-  console.log('          Interval (--interval) between loops set to %d\n'.grey, interval);
+  console.log('          --pattern      Filter tests by given pattern: %s'.grey, pattern || '');
+  console.log('          --duration     Duration per test: %d seconds'.grey, duration);
+  console.log('          --times        Each test will be executed %d times on each loop.'.grey, times);
+  console.log('          --interval     Interval between loops is set to %d\n'.grey, interval);
 }
 
 function run(){
@@ -37,14 +39,19 @@ function run(){
       return;
     }
 
+    if(pattern && !(new RegExp(pattern)).test(keys[i])){
+      return next(i+1);
+    }
+
     var options = {
-      fn: tests[keys[i]],
-      duration: duration,
-      times: times,
-      interval: interval
+      fn       : tests[keys[i]],
+      duration : duration,
+      times    : times,
+      interval : interval
     };
 
     memdiff(options, function(result){
+
       console.log('    ',
                   i + 1 + '.',
                   ( keys[i] + ':' ).bold.grey,
