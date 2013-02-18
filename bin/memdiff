@@ -7,7 +7,7 @@ require("colors");
 
 
 var duration = argv.duration || 5,
-    times    = argv.times || 99,
+    times    = argv.times || 999,
     interval = argv.interval || 2.5;
 
 argv.help || argv.verbose && help();
@@ -49,7 +49,7 @@ function run(){
                   i + 1 + '.',
                   ( keys[i] + ':' ).bold.grey,
                   result.size[ parseInt(result.size) < 50 ? 'white' : 'red' ]);
-      next(i+1);
+      setTimeout(next, 200, i+1);
     });
 
   }(0));
