@@ -1,0 +1,28 @@
+{
+  "name": "memdiff",
+  "version": "0.0.0",
+  "description": "run a function for given duration, return heap diff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./bin/memdiff example/simple"
+  },
+  "bin":{
+    "memdiff":"./bin/memdiff"
+  },
+  "dependencies":{
+    "colors": "0.x",
+    "optimist": "0.x",
+    "memwatch": "0.x",
+    "require-like": "0.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:azer/memdiff.git"
+  },
+  "keywords": [
+    "memory",
+    "leak"
+  ],
+  "author": "Azer Koculu",
+  "license": "BSD"
+}
