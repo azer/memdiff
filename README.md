@@ -51,7 +51,7 @@ function leaking(){
   leaks.push(new SimpleClass);
 }
 
-memdiff(leaking, function(result){
+memdiff(leaking, function(result){ // or memdiff({ fn: leaking, duration: 15, times: 9999, interval: 1 ....
   console.log('leaking: ', result.size);
 });
 ```
