@@ -1,5 +1,3 @@
-require('./bdd');
-
 function LeakingClass(){}
 
 var leaks = [];
