@@ -5,7 +5,7 @@ BDD style memory leak hunting tool. See [example/simple.js](#example)
 ## Install
 
 ```bash
-$ npm install memdiff
+$ npm install -g memdiff
 ```
 
 ## Usage
