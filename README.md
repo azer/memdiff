@@ -26,13 +26,39 @@ var leaks = [];
 describe('SimpleClass', function(){
 
   it('is leaking', function(){
-    leaks.push(new SimpleClass());
+    leaks.push(new SimpleClass);
   });
 
 
   it('is not leaking', function(){
     new SimpleClass;
   });
+  
+<a name="api"></a>
+## API
+
+```js
+var memdiff = require('memdiff');
+
+function SimpleClass(){}
+var leaks = [];
+
+function leaking(){
+  leaks.push(new SimpleClass);
+}
+
+function notLeaking(){
+  new SimpleClass;
+}
+
+memdiff(leaking, function(result){
+  console.log('leaking: ', result.size);
+  
+  memdiff(notLeaking, function(result){
+    console.log('not leaking: ', result.size);
+  });
+  
+});
 
 });
 ```
