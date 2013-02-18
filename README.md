@@ -8,6 +8,8 @@ BDD style memory leak hunting tool. See [example/simple.js](#example)
 $ npm install -g memdiff
 ```
 
+Requires Node v0.8.x
+
 ## Usage
 
 ```bash
