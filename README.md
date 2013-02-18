@@ -33,7 +33,9 @@ describe('SimpleClass', function(){
   it('is not leaking', function(){
     new SimpleClass;
   });
-  
+
+```
+
 <a name="api"></a>
 ## API
 
