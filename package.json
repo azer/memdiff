@@ -1,6 +1,6 @@
 {
   "name": "memdiff",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "BDD style memory leak hunting tool.",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,7 @@
     "memdiff":"./bin/memdiff"
   },
   "dependencies":{
+    "iter:": "0.x",
     "colors": "0.x",
     "optimist": "0.x",
     "memwatch": "0.x",

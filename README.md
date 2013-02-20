@@ -32,8 +32,10 @@ describe('SimpleClass', function(){
   });
 
 
-  it('is not leaking', function(){
+  it('is async and not leaking', function(done){
     new SimpleClass;
+
+    process.nextTick(done);
   });
 
 });
