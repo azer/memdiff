@@ -10,7 +10,7 @@
     "memdiff":"./bin/memdiff"
   },
   "dependencies":{
-    "iter:": "0.x",
+    "iter": "0.x",
     "colors": "0.x",
     "optimist": "0.x",
     "memwatch": "0.x",
