@@ -1,3 +1,5 @@
+## memdiff [![Build Status](https://travis-ci.org/azer/memdiff.png)](https://travis-ci.org/azer/memdiff)
+
 BDD style memory leak hunting tool. See [example/simple.js](#example)
 
 ![](https://dl.dropbox.com/s/dh69myarcqjkm6i/memdiff.png?token_hash=AAHxKG2CeksLu7V6HWCy_zr9TQLhoVfQXNFh3pMv9ujVbw)
