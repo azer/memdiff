@@ -2,7 +2,7 @@
 
 BDD style memory leak hunting tool. See [example/simple.js](#example)
 
-![](https://dl.dropbox.com/s/dh69myarcqjkm6i/memdiff.png?token_hash=AAHxKG2CeksLu7V6HWCy_zr9TQLhoVfQXNFh3pMv9ujVbw)
+![](http://i.cloudup.com/WQHTKzYR5T.png)
 
 ## Install
 
