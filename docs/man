@@ -1,0 +1,13 @@
+     Usage
+
+          memdiff [module] [options]
+
+     Options
+
+          --grep         Filter tests by given pattern:
+          --duration     Duration per test: 5 seconds
+          --times        Each test will be executed 999 times on each loop.
+          --interval     Interval between loops is set to 2.5
+
+          --help
+          --version

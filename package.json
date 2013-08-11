@@ -1,20 +1,24 @@
 {
   "name": "memdiff",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "BDD style memory leak hunting tool.",
   "main": "index.js",
   "scripts": {
     "test": "./bin/memdiff example/simple"
   },
-  "bin":{
-    "memdiff":"./bin/memdiff"
+  "bin": {
+    "memdiff": "./bin/memdiff"
   },
-  "dependencies":{
+  "dependencies": {
     "iter": "0.x",
-    "colors": "0.x",
     "optimist": "0.x",
     "memwatch": "0.x",
-    "require-like": "0.x"
+    "require-like": "0.x",
+    "chai": "~1.7.2",
+    "show-help": "0.0.0",
+    "show-version": "0.0.0",
+    "styled": "0.0.1",
+    "new-format": "0.0.1"
   },
   "repository": {
     "type": "git",
