@@ -2,7 +2,7 @@
   "name": "memdiff",
   "version": "1.0.0",
   "description": "BDD style memory leak hunting tool.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "./bin/memdiff example/simple"
   },
