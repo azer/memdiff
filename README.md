@@ -4,6 +4,10 @@ BDD style memory leak hunting tool. See [example/simple.js](#example)
 
 ![](http://i.cloudup.com/WQHTKzYR5T.png)
 
+## Warning
+
+Memdiff is experimental. I've been noticing some inconsistency but haven't had time for checking out and fixing yet.
+
 ## Install
 
 ```bash
