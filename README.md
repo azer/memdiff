@@ -6,7 +6,7 @@ BDD style memory leak hunting tool. See [example/simple.js](#example)
 
 ## Warning
 
-Memdiff is experimental. I've been noticing some inconsistency but haven't had time for checking out and fixing yet.
+Memdiff is experimental. I've been noticing some inconsistency, haven't had time for checking out and fixing yet.
 
 ## Install
 
